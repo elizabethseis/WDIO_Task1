@@ -6,7 +6,14 @@ class ContentDetailsComponent extends BaseComponent {
   }
 
   get pastedText() {
-    return this.rootEl.$('.de1');
+    return this.rootEl.$('[style="font-size: px; line-height: px;"]');
+  }
+
+  topBtns(btn) {
+    const selectors = {
+      bashBtn: '[href="/archive/bash"]',
+    };
+    return this.rootEl.$(selectors[btn]);
   }
 }
 module.exports = ContentDetailsComponent;

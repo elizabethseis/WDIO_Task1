@@ -11,6 +11,7 @@ class OptionalPasteSettingsComponent extends BaseComponent {
      */
   settings(options) {
     const selectors = {
+      syntaxHighlighting: '#select2-postform-format-container',
       pasteExpiration: '#select2-postform-expiration-container',
       pasteName: '#postform-name',
     };
@@ -28,6 +29,13 @@ class OptionalPasteSettingsComponent extends BaseComponent {
       expirationTenMin: '[role="option"]:nth-child(3)',
     };
     return $(selectors[pasteExpirationOptions]);
+  }
+
+  syntaxHighlighting(options) {
+    const selectors = {
+      searchSyntax: '[type="search"]',
+    };
+    return $(selectors[options]);
   }
 
   get newPasteBtn() {

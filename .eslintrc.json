@@ -12,7 +12,6 @@
     "rules": {
         "max-len": ["error", { "code": 200, "ignoreComments": true, "ignoreUrls": true }],
         "require-jsdoc": "off",
-        "valid-jsdoc": "off",
-        "indent": ["error", 2]
+        "valid-jsdoc": "off"
     }
 }
